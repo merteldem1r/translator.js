@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0E1525;
+    font-family: 'Nunito', sans-serif;
+}
+
+button {
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+}
+
+textarea {
+    padding: 10px;
+    resize: none;
+    border-bottom: none;
+    font-family: inherit;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    color: #000;
+    background-color: #fff;
+    position: relative;
+}
+
+.title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #152a56;
+}
+
+.content {
+    border: 1px solid darkblue;
+}
+
+.translation-navbar {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid darkblue;
+}
+
+.nav-box {
+    display: flex;
+    gap: 10px;
+}
+
+.translation-areas {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#translateBtn {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: #152a56;
+    transition: background-color .1s linear;
+}
+
+#translateBtn:hover {
+    background-color: #1c3771;
+}
+
+.error-box {
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: darkred;
+}
+
+.error-box.active {
+    display: block;
+}
+
+.notification-box {
+    color: rgb(0, 152, 0);
+    position: absolute;
+    top: 30px;
+    right: 15px;
+}
+
+.copy-box {
+    font-size: 13px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .1s linear;
+}
+
+.copy-box.active {
+    opacity: 1;
+    pointer-events: auto;
+}

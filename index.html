@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="languages.js"></script>
+    <script src="app.js" defer></script>
+    <title>Translator API</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h5 class="title">TRANSLATOR</h5>
+
+        <div class="notification-box active">
+            <div class="copy-box">
+                Translation copied <i class="fa-solid fa-check"></i>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="translation-navbar">
+                <div class="nav-box">
+                    <button class="speak" id="left">
+                        <i class="fa-solid fa-volume-high"></i>
+                    </button>
+
+                    <button class="copyBtn" id="left">
+                        <i class="fa-regular fa-copy"></i>
+                    </button>
+
+                    <select class="languages" id="leftLanguage">
+
+                    </select>
+                </div> <!-- nav-box -->
+
+                <div class="replace-box">
+                    <button id="replaceBtn" type="button">
+                        <i class="fa-sharp fa-solid fa-right-left"></i>
+                    </button>
+                </div> <!-- replace-btn -->
+
+                <div class="nav-box">
+                    <button class="speak" id="right">
+                        <i class="fa-solid fa-volume-high"></i>
+                    </button>
+
+                    <button class="copyBtn" id="right">
+                        <i class="fa-regular fa-copy"></i>
+                    </button>
+
+                    <select class="languages" id="rightLanguage">
+
+                    </select>
+                </div><!-- nav-box -->
+            </div> <!-- translation-navbar -->
+
+            <div class="translation-areas">
+                <div class="left-box">
+                    <textarea rows="7" cols="30" id="leftTextArea"></textarea>
+                </div>
+                <div class="right-box">
+                    <textarea rows="7" cols="30" id="rightTextArea" disabled="disabled"></textarea>
+                </div>
+            </div> <!-- translation-areas -->
+        </div>
+
+        <button id="translateBtn" type="button">Translate</button>
+
+        <div class="error-box">
+            * Here we gonna show error messages
+        </div>
+    </div>
+
+</body>
+
+</html>
