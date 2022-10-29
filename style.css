@@ -11,7 +11,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #0E1525;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -40,9 +39,10 @@ textarea:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px;
+    padding: 20px;
     color: #000;
     background-color: #fff;
+    box-shadow: rgb(38 57 77) 0px 20px 30px -10px;
     position: relative;
 }
 
